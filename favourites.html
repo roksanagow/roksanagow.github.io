@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favourites — Roksana Goworek</title>
+  <meta name="description" content="Papers Roksana Goworek keeps coming back to, and why." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <a id="egg" href="#" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"></a>
+
+  <header class="topbar">
+    <a class="home" href="index.html">← RG</a>
+    <nav>
+      <a href="index.html#publications">publications</a>
+      <a href="index.html#updates">updates</a>
+      <a href="favourites.html" aria-current="page">favourites</a>
+      <button id="theme-toggle" type="button" aria-label="Toggle colour theme">light</button>
+    </nav>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero" style="min-height:42vh;" aria-label="Favourites intro">
+      <p class="eyebrow">a reading list</p>
+      <h1 style="font-size:clamp(2.2rem,7vw,3.4rem);">Papers I love</h1>
+      <p class="tagline" style="max-width:48ch;">
+        Work I keep coming back to — for the idea, the framing, or the craft.
+      </p>
+    </section>
+
+    <!-- To add a favourite: copy a <a class="card"> block. The whole card
+         (title included) links to the paper. Write the blurb in your own voice. -->
+    <section class="reveal">
+      <p class="sec-label">Favourites</p>
+      <div class="cards">
+
+        <a class="card" href="https://arxiv.org/abs/2507.14805" target="_blank" rel="noopener">
+          <p class="kind">paper · Cloud, Le et al., 2025</p>
+          <p class="ctitle">Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data</p>
+          <p>Why this one stuck with you — a sentence or two. <em>(placeholder — edit me)</em></p>
+        </a>
+
+        <a class="card" href="https://transformer-circuits.pub/2026/nla/" target="_blank" rel="noopener">
+          <p class="kind">paper · Fraser-Taliente, Kantamneni, Ong et al., 2026</p>
+          <p class="ctitle">Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations</p>
+          <p>What makes it worth reading. <em>(placeholder — edit me)</em></p>
+        </a>
+
+        <a class="card" href="https://arxiv.org/abs/2505.12540" target="_blank" rel="noopener">
+          <p class="kind">paper · Jha, Zhang, Shmatikov, Morris, 2025</p>
+          <p class="ctitle">Harnessing the Universal Geometry of Embeddings</p>
+          <p>The idea you wish you'd thought of first. <em>(placeholder — edit me)</em></p>
+        </a>
+
+        <a class="card" href="https://arxiv.org/abs/2405.07987" target="_blank" rel="noopener">
+          <p class="kind">paper · Huh, Cheung, Wang, Isola, 2024</p>
+          <p class="ctitle">The Platonic Representation Hypothesis</p>
+          <p>Why it shapes how you think about representations. <em>(placeholder — edit me)</em></p>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>© <span id="yr"></span> Roksana Goworek</p>
+  </footer>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
+</body>
+</html>
