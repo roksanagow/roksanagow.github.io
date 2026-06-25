@@ -12,7 +12,6 @@
 </head>
 <body>
   <canvas id="field" aria-hidden="true"></canvas>
-  <a id="egg" href="#" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"></a>
 
   <header class="topbar">
     <a class="home" href="index.html">← RG</a>
@@ -27,10 +26,8 @@
   <main class="wrap" id="top">
     <section class="hero" style="min-height:42vh;" aria-label="Favourites intro">
       <p class="eyebrow">a reading list</p>
-      <h1 style="font-size:clamp(2.2rem,7vw,3.4rem);">Papers I love</h1>
-      <p class="tagline" style="max-width:48ch;">
-        Work I keep coming back to — for the idea, the framing, or the craft.
-      </p>
+      <h1 style="font-size:clamp(2.2rem,7vw,3.4rem);">Some really cool papers that inspire my ideas</h1>
+
     </section>
 
     <!-- To add a favourite: copy a <a class="card"> block. The whole card
@@ -42,25 +39,25 @@
         <a class="card" href="https://arxiv.org/abs/2507.14805" target="_blank" rel="noopener">
           <p class="kind">paper · Cloud, Le et al., 2025</p>
           <p class="ctitle">Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data</p>
-          <p>Why this one stuck with you — a sentence or two. <em>(placeholder — edit me)</em></p>
+          <p>One of the first papers I read that really showed something hidden, semantically not detectable unless you're the same type of language model. Gave me many ideas about how meaning can be represented and inferred inside LLMs. This is at the interception of transfer, embedding spaces, safety and sci-fi encryption. Highly recommend a read. </p>
         </a>
 
         <a class="card" href="https://transformer-circuits.pub/2026/nla/" target="_blank" rel="noopener">
           <p class="kind">paper · Fraser-Taliente, Kantamneni, Ong et al., 2026</p>
           <p class="ctitle">Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations</p>
-          <p>What makes it worth reading. <em>(placeholder — edit me)</em></p>
+          <p>Recent read as I start looking more into mechanistic interpretability. Very cool idea that answered the question I had from the beginning of my studies back in 2018: how can we read an AI's thoughts directly? They create an autoencoder where natural langauge is the bottleneck, and 2 versions of the model itself acts as both the 'layers'. I think there are some major issues to iron out like the warm-start being summarisation, the layer l embedding being injected directly into layer 0, and the confabulation problem, but I think it's a great approach to start getting closer to what I've always imagined. (Even if it's impractical due to the amount of explanations across all layers, tokens, CoT etc.) </p>
         </a>
 
         <a class="card" href="https://arxiv.org/abs/2505.12540" target="_blank" rel="noopener">
           <p class="kind">paper · Jha, Zhang, Shmatikov, Morris, 2025</p>
           <p class="ctitle">Harnessing the Universal Geometry of Embeddings</p>
-          <p>The idea you wish you'd thought of first. <em>(placeholder — edit me)</em></p>
+          <p>Super cool method! So simple, yet it broke the implicitly impossible assumption that you can't translate embeddings across different models. If I remember correctly, with just 4 MLPs and few constraints to translate from the original space to a latent space and back with minimal reconstruction loss and maintain relative distances between points, they managed to break the 'encryption' provided by language models and give additional evidence towards the universal representation hypothesis that good models of (some aspects of) the world converge to some universal representation alinged with the truth.</p>
         </a>
 
         <a class="card" href="https://arxiv.org/abs/2405.07987" target="_blank" rel="noopener">
           <p class="kind">paper · Huh, Cheung, Wang, Isola, 2024</p>
           <p class="ctitle">The Platonic Representation Hypothesis</p>
-          <p>Why it shapes how you think about representations. <em>(placeholder — edit me)</em></p>
+          <p>Lots of really cool findings, better articulated arguments for the platonic (/universal) representation hypothesis. With evidence from different language models and different modalities. I remember feeling very inspired after I read this on a flight but have now mostly forgotten the details.</p>
         </a>
 
       </div>

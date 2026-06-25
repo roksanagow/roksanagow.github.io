@@ -132,7 +132,7 @@ body {
 }
 .hero .tagline {
   font-family: var(--f-body);
-  /* font-style: italic; */
+  font-style: normal;
   font-size: clamp(1.15rem, 2.8vw, 1.5rem);
   line-height: 1.45;
   color: var(--text);
@@ -401,19 +401,6 @@ footer {
   font-family: var(--f-mono);
   font-size: 0.75rem;
   color: var(--muted);
-}
-
-/* ---------- easter-egg link hotspot (invisible; the connecting lines are
-   themselves clickable hyperlinks, guarded against real links) ---------- */
-#egg {
-  position: fixed;
-  z-index: 40;
-  display: none;
-  width: 20px;
-  height: 20px;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  background: none;
 }
 
 /* ---------- reveal-on-scroll ---------- */
